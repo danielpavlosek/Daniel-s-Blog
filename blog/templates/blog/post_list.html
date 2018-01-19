@@ -2,19 +2,26 @@
 <head>
   <title>Daniel's First Blog</title>
 </head>
-<h3> This is a helpful blog about how to make a very pretentious blog </h3>
-<p>1. Make it all about yourself, no matter what the theme of your blog or the blog topics are. Don’t just include your personality, opinion and views; truly make everything about you. We just want to hear what you think, we don’t care about reason and facts. You are important and famous, after all. An expert, a guru. People admire the ground you walk on and they really just want to read about YOU.
+<body>
+  <div>
+      <h1><a href="/">Django Girls Blog</a></h1>
+  </div>
 
-2. Style every single photograph to the absolute max. If you’re photographing food, make sure that your sponsored wallet, watch and sunglasses are in the shot too (photograph ALL food, by the way, everyone needs to see every single cappuccino – even if you only post it to instagram, twitter and facebook).
+  {% for post in posts %}
+      <div>
+          <p>published: {{ post.published_date }}</p>
+          <h1><a href="">{{ post.title }}</a></h1>
+          <p>{{ post.text|linebreaksbr }}</p>
+      </div>
+  {% endfor %}
 
-If it’s an outfit post (MY FAVOURITE!), please include at least 12 images of you in slightly varied poses – the world NEEDS to see that shit. Do pout, pose A LOT and do that original thing where you hold your hair back with one hand while looking down & pretending to be shy. Blue Steel. Smile. Pout. Pout. Pout. Pout. Over the shoulder shot. Hair blowing in the wind. Blue Steel. Half Smile. Stare into the distance. You’re a natural.
-If it’s beauty products you’re shooting, don’t worry about over editing AT ALL, nobody actually looks at the pictures to see what the products look like. Do include vases with tulips or lilies and a couple of candles in the background of every overstyled shot. A potted orchid will do in a pinch. Remember nobody cares about seeing what the actual products look like, they just want to see your beautiful magazine-style images.
 
-3. Gush over the free things like it’s nobody’s business. OF COURSE YOU LOVE THAT THING THAT’S SO COOL! It makes for such interesting content, do keep up writing that way. Everyone wants to see all the things you like, with no further details at all.
-4. Don’t bother disclosing paid posts and advertorial content. It’s not like ANYONE can tell when someone promotes products or services for payment, don’t worry about it! You’ll still have all your credibility when South Africa eventually gets disclosure laws. Don’t look so nervous now!
 
-5. Remember to tell everyone about every ah-mazing opportunity you get, about everywhere you get to go, who you saw when you were there (pose with every one of those celebs now!) and show us every single thing you get gifted. Everyone also wants to see every single snack you are offered at an event and if there’s champers, take a snap yo! You don’t look niksgewoond at all, you definitely look like you’re living the high life for realz.
 
+
+
+
+</body>
 
 
 
